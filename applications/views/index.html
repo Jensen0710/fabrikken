@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="../../css/sass.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../js/javascript.js"></script>
@@ -11,12 +14,45 @@
     <title>Fabrikken A/S</title>
 </head>
 <body>
-    <header>
-        <nav>
-
-        </nav>
-    </header>
+<header>
+  <div class="app">
+      <nav>
+          <div class="logo">
+              <span>Fabrikken A/S</span>
+          </div>
+          <div class="links">
+              <a href="">Home</a>
+              <div class="dropdown">
+                  <a class="dropdown-bttn" href="#">Products</a>
+                  <div class="dropdown-content">
+                      <a href="#">Reperation</a>
+                      <a href="">Nedriving</a>
+                      <a href="">Vedligeholdelse</a>
+                      <a href="">Raketter</a>
+                      <a href="#">Traktorer</a>
+                      <a href="#">Droner</a>
+                  </div>
+              </div>
+              <a href="">About</a>
+              <a href="">Contact</a>
+          </div>
+          <div class="search-wrapper">
+              <form id="searchForm" class="visible" action="index.html" method="post">
+                  <input type="search" name="search" value="" placeholder="Søg her">
+              </form>
+              <div class="search">
+                  <a onclick="toggleClass()" id="searchBttn" href="#"><img src="../../img/search.svg" alt="search_icon"></a>
+              </div>
+          </div>
+      </nav>
+  </div>
+</header>
     <main>
+        <div class="slideshow">
+            <div class="slideshow-content">
+                <img src="../../img/arif-wahid-266541.jpg" alt="sience-image">
+            </div>
+        </div>
         <div class="container main__info-box text-center main__info-templatespacing">
             <div class="col-md-4 main__info-template">
                     <img src="../../img/heart.svg" alt="" class="main__info-picture img-fluid">
